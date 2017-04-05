@@ -19,6 +19,8 @@ class PagesController < ApplicationController
       redirect_to root_path, :notice=> "User not found!"
     end
     
+    @posts = Post.all
+    
   end
 
   # back-end code for pages/explore
